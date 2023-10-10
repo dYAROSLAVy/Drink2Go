@@ -1,66 +1,75 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="Drink2Go интернет-магазин по продаже кофейных напитков, главная страница"
-    />
-    <title>Drink2Go</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <!-- <link
-      rel="preload"
-      href="fonts/montserrat-regular.woff2"
-      as="font"
-      crossorigin="anonymous"
-    /> -->
-    <!-- <link rel="icon" href="favicon.ico" />
-    <link rel="icon" href="img/fav/icon.svg" type="image/svg+xml" />
-    <link rel="apple-touch-icon" href="img/fav/apple.png" />
-    <link rel="manifest" href="manifest.webmanifest" /> -->
-  </head>
 
-  <body class="page__body">
-    <div class="wrapper">
-      <header class="header">
-        <div class="container">
-          <a class="header__logo">
-            <img
-              src="images/logo-mob.svg"
-              width="32"
-              height="36"
-              alt="Логотип сайта Drink2Go"
-            />
-          </a>
-          <nav class="nav">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Drink2Go интернет-магазин по продаже кофейных напитков, главная страница">
+  <title>Drink2Go</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preload" href="fonts/montserrat-regular.woff2" as="font" crossorigin="anonymous">
+</head>
+
+<body class="page__body">
+  <div class="wrapper">
+    <header class="header">
+      <div class="container">
+        <a class="header__logo" href="#">
+          <img src="images/logo-mob.svg" width="32" height="36" alt="Логотип сайта Drink2Go">
+        </a>
+        <nav class="nav nav--closed nav--back">
+          <ul class="nav__list site-list">
+            <li class="site-list__item">
+              <a class="site-list__link" href="#">ГЛАВНАЯ</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="#">КАТАЛОГ</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="#">ДОСТАВКА</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="#">О НАС</a>
+            </li>
+          </ul>
+          <div class="nav__inner">
+            <ul class="nav__list user-list">
+              <li class="user-list__item">
+                <a class="user-list__link" href="#" >
+                  <svg width="16" height="16">
+                    <use href="images/icons/stack.svg#user"></use>
+                  </svg>
+                  <span class="visually-hidden">Личный кабинет</span>
+                </a>
+              </li>
+              <li class="user-list__item">
+                <a class="user-list__link" href="#">
+                  <svg width="16" height="16">
+                    <use href="images/icons/stack.svg#basket"></use>
+                  </svg>
+                  <span class="visually-hidden">Корзина</span>
+                </a>
+              </li>
+            </ul>
             <button class="nav__toggle" type="button">
-              <span class="visually-hidden"
-                >Переключатель отображения меню</span
-              >
+              <span class="visually-hidden">Переключатель отображения меню</span>
               <span class="nav__toggle-in">
                 <span class="nav__toggle-decor"></span>
                 <span class="nav__toggle-decor"></span>
                 <span class="nav__toggle-decor"></span>
               </span>
             </button>
-            <ul class="nav__list">
-              <li class="nav__item">
-                <a class="nav__link">Главная</a>
-                <a class="nav__link">Каталог</a>
-                <a class="nav__link">Доставка</a>
-                <a class="nav__link">О нас</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </header>
+          </div>
+        </nav>
+      </div>
+    </header>
 
-      <main class="main"></main>
+    <main class="main"></main>
 
-      <footer class="footer"></footer>
-    </div>
+    <footer class="footer"></footer>
+  </div>
 
-    <script src="js/script.js" defer></script>
-  </body>
+  <script src="js/main.js" type="module"></script>
+</body>
+
 </html>
