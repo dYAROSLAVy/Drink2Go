@@ -1,0 +1,31 @@
+.site-list {
+  display: flex;
+
+  @include vp-mob {
+    position: absolute;
+    z-index: 2;
+    top: 60px;
+    left: 0;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: $color-default-white;
+  }
+}
+
+.site-list__item {
+  @include vp-mob {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    border-top: 1px solid $color-magnolia;
+
+    &:last-child {
+      border-bottom: 1px solid $color-magnolia;
+    }
+  }
+}
+
+.site-list__link {
+  padding: 20px;
+}

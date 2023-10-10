@@ -1,3 +1,22 @@
 .header {
-  padding: 12px 0;
+  position: relative;
+  flex-shrink: 0;
+  padding: 10px 0;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0 10px 0 20px;
+}
+
+.header__logo {
+  width: 32px;
+  height: 36px;
+}
+
+.header a {
+  @include a-reset;
 }

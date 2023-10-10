@@ -4,6 +4,11 @@
   list-style: none;
 }
 
+@mixin a-reset {
+  color: $color-default-black;
+  text-decoration: none;
+}
+
 @mixin vp-mob {
   @media (max-width: $vp-mob) {
     @content;
