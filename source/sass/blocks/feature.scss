@@ -1,0 +1,11 @@
+.feature {
+  display: flex;
+  flex-direction: column;
+  min-height: 142px;
+  align-items: center;
+  gap: 4px;
+}
+
+.feature__img:not(:last-child) {
+  margin-bottom: 6px;
+}
