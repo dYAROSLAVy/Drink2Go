@@ -1,7 +1,15 @@
-/* GLOBAL */
-@import "global/variables";
-@import "global/global";
-@import "global/fonts";
+// Global
+// ---------------------------------
+@import "./global/variables";
+@import "./global/mixins";
+@import "./global/fonts";
+@import "./global/reboot";
+@import "./global/utils";
+@import "./global/container";
+@import "./global/wrapper";
 
-/* BLOCKS */
-@import "blocks/header";
+
+// Blocks
+// ---------------------------------
+@import "../sass/blocks/header";
+@import "../sass/blocks/nav";

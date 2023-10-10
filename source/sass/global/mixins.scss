@@ -1,0 +1,29 @@
+@mixin list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin vp-mob {
+  @media (max-width: $vp-mob) {
+    @content;
+  }
+}
+
+@mixin vp-tab {
+  @media (min-width: $vp-tab) {
+    @content;
+  }
+}
+
+@mixin vp-desk {
+  @media (min-width: $vp-desk) {
+    @content;
+  }
+}
+
+@mixin dp {
+  @media (min-resolution: 2dppx) {
+    @content;
+  }
+}

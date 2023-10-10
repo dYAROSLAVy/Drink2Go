@@ -1,13 +1,65 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
   <head>
-    <meta charset="UTF-8">
-    <title>Название проекта</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="css/style.css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Drink2Go интернет-магазин по продаже кофейных напитков, главная страница"
+    />
+    <title>Drink2Go</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- <link
+      rel="preload"
+      href="fonts/montserrat-regular.woff2"
+      as="font"
+      crossorigin="anonymous"
+    /> -->
+    <!-- <link rel="icon" href="favicon.ico" />
+    <link rel="icon" href="img/fav/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="img/fav/apple.png" />
+    <link rel="manifest" href="manifest.webmanifest" /> -->
   </head>
+
   <body class="page__body">
-    <header class="header">Шапка</header>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container">
+          <a class="header__logo">
+            <img
+              src="images/logo-mob.svg"
+              width="32"
+              height="36"
+              alt="Логотип сайта Drink2Go"
+            />
+          </a>
+          <nav class="nav">
+            <button class="nav__toggle" type="button">
+              <span class="visually-hidden"
+                >Переключатель отображения меню</span
+              >
+              <span class="nav__toggle-in">
+                <span class="nav__toggle-decor"></span>
+                <span class="nav__toggle-decor"></span>
+                <span class="nav__toggle-decor"></span>
+              </span>
+            </button>
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a class="nav__link">Главная</a>
+                <a class="nav__link">Каталог</a>
+                <a class="nav__link">Доставка</a>
+                <a class="nav__link">О нас</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <main class="main"></main>
+
+      <footer class="footer"></footer>
+    </div>
 
     <script src="js/script.js" defer></script>
   </body>
