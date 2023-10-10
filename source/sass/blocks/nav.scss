@@ -5,6 +5,10 @@
   line-height: 16px;
 }
 
+.nav .user-list {
+  max-width: 70%;
+}
+
 .nav__toggle {
   display: flex;
   margin: 0;
@@ -70,11 +74,7 @@
   @include list-reset;
 }
 
-.nav__list.user-list {
-  max-width: 70%;
-}
-
-.nav--closed .nav__list.site-list {
+.nav--closed .site-list {
   display: none;
 
   @include vp-tab {

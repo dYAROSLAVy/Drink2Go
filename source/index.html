@@ -17,7 +17,7 @@
         <a class="header__logo" href="#">
           <img src="images/logo-mob.svg" width="32" height="36" alt="Логотип сайта Drink2Go">
         </a>
-        <nav class="nav nav--closed nav--back">
+        <nav class="nav nav--closed">
           <ul class="nav__list site-list">
             <li class="site-list__item">
               <a class="site-list__link" href="#">ГЛАВНАЯ</a>
@@ -35,7 +35,7 @@
           <div class="nav__inner">
             <ul class="nav__list user-list">
               <li class="user-list__item">
-                <a class="user-list__link" href="#" >
+                <a class="user-list__link" href="#">
                   <svg width="16" height="16">
                     <use href="images/icons/stack.svg#user"></use>
                   </svg>
@@ -64,7 +64,75 @@
       </div>
     </header>
 
-    <main class="main"></main>
+    <main class="main">
+      <section class="hero">
+        <div class="container">
+          <div class="hero__inner">
+            <h1 class="visually-hidden">Интернет-магазин Drink2Go по продаже кофейных напитков</h1>
+            <picture>
+              <img src="images/hero.png" srcset="images/hero@2x.png" width="280" height="280"
+                alt="Изображение стильной бежевой жестяной банки с напитком Декаф Флэт Уайт">
+            </picture>
+            <span class="badge">НОВИНКА!</span>
+            <h2 class="hero__title title">Декаф Флэт Уайт</h2>
+            <p class="hero__description text">Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским
+              молоком —
+              то, что нужно для расслабления после тяжёлого рабочего дня</p>
+            <div class="hero__order order">
+              <div class="order__inner">
+                <del class="order__old-price">295₽</del>
+                <span class="order__price">225₽</span>
+              </div>
+              <a class="order__button button" href="#">Заказать</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="features">
+        <div class="container">
+          <span class="badge">ПРЕИМУЩЕСТВА</span>
+          <h2 class="features__title title title--primary">Главные причины выбрать Drink2Go</h2>
+          <ul class="features__list">
+            <li class="features__list-item">
+              <div class="feature">
+                <svg class="feature__img" width="52" height="56">
+                  <use href="images/icons/stack.svg#clock"></use>
+                </svg>
+                <h3 class="title title--secondary">Скорость</h3>
+                <p class="feature__text text">Готовый напиток всегда под рукой — просто открой банку</p>
+              </div>
+            </li>
+            <li class="features__list-item">
+              <div class="feature">
+                <svg class="feature__img" width="52" height="56">
+                  <use href="images/icons/stack.svg#shield"></use>
+                </svg>
+                <h3 class="title title--secondary">Удобство</h3>
+                <p class="feature__text text">Легко помещается и в карман,<br>и в маленькую сумочку</p>
+              </div>
+            </li>
+            <li class="features__list-item">
+              <div class="feature">
+                <svg class="feature__img" width="52" height="56">
+                  <use href="images/icons/stack.svg#lightning"></use>
+                </svg>
+                <h3 class="title title--secondary">Бодрость</h3>
+                <p class="feature__text text">Сбалансированная доза кофеина даст мощный заряд энергии</p>
+              </div>
+            </li>
+            <li class="features__list-item">
+              <div class="feature">
+                <svg class="feature__img" width="52" height="56">
+                  <use href="images/icons/stack.svg#sheet"></use>
+                </svg>
+                <h3 class="title title--secondary">Экологичность</h3>
+                <p class="feature__text text">Вся упаковка сделана <br>из перерабатываемых материалов</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
 
     <footer class="footer"></footer>
   </div>
