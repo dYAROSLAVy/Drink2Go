@@ -1,0 +1,59 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.form__fieldset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.form__legend:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.form__list {
+  @include list-reset;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.form__control {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 34px;
+}
+
+.form__control-mark {
+  position: absolute;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  background-color: $color-default-white;
+  border: solid 2px $color-slate-blue;
+  border-radius: 50%;
+}
+
+.form__field[type="radio"]:checked + .form__control-mark::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 16px;
+  height: 16px;
+  background: $color-slate-blue;
+  border-radius: 50%;
+}
+
+.form__button-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}

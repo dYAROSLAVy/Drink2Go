@@ -99,7 +99,7 @@
                   <use href="images/icons/stack.svg#clock"></use>
                 </svg>
                 <h3 class="title title--secondary">Скорость</h3>
-                <p class="feature__text text">Готовый напиток всегда под рукой — просто открой банку</p>
+                <p class="text">Готовый напиток всегда под рукой — просто открой банку</p>
               </div>
             </li>
             <li class="features__list-item">
@@ -108,7 +108,7 @@
                   <use href="images/icons/stack.svg#shield"></use>
                 </svg>
                 <h3 class="title title--secondary">Удобство</h3>
-                <p class="feature__text text">Легко помещается и в карман,<br>и в маленькую сумочку</p>
+                <p class="text">Легко помещается и в карман,<br>и в маленькую сумочку</p>
               </div>
             </li>
             <li class="features__list-item">
@@ -117,7 +117,7 @@
                   <use href="images/icons/stack.svg#lightning"></use>
                 </svg>
                 <h3 class="title title--secondary">Бодрость</h3>
-                <p class="feature__text text">Сбалансированная доза кофеина даст мощный заряд энергии</p>
+                <p class="text">Сбалансированная доза кофеина даст мощный заряд энергии</p>
               </div>
             </li>
             <li class="features__list-item">
@@ -126,10 +126,125 @@
                   <use href="images/icons/stack.svg#sheet"></use>
                 </svg>
                 <h3 class="title title--secondary">Экологичность</h3>
-                <p class="feature__text text">Вся упаковка сделана <br>из перерабатываемых материалов</p>
+                <p class="text">Вся упаковка сделана <br>из перерабатываемых материалов</p>
               </div>
             </li>
           </ul>
+        </div>
+      </section>
+      <section class="catalog">
+        <div class="container">
+          <span class="badge">КАТАЛОГ</span>
+          <h2 class="catalog__title title title--primary">Каталог кофейных напитков</h2>
+          <form class="form" action="https://echo.htmlacademy.ru/" method="get">
+            <fieldset class="form__fieldset">
+              <legend class="form__legend legend">Цена</legend>
+              <div class="price-range">
+                <div class="price-range__slider"></div>
+                <div class="price-range__inputs-wrapper">
+                  <label>
+                    <input class="price-range__value price-range__value--min" type="number" step="any"
+                      name="price-range-min" id="price-range-min" placeholder="0" min="0" max="1000">
+                  </label>
+                  <span class="price-range__deco"></span>
+                  <label>
+                    <input class="price-range__value price-range__value--max" type="number" step="any"
+                      name="price-range-max" id="price-range-max" value="900" min="0" max="1000">
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+            <fieldset class="form__fieldset">
+              <legend class="form__legend legend">Наличие молока</legend>
+              <ul class="form__list">
+                <li class="form__item">
+                  <label class="form__control">
+                    <input class="form__field visually-hidden" type="radio" id="no-matter" name="no-matter" checked>
+                    <span class="form__control-mark"></span>
+                    <span class="form__label">Неважно</span>
+                  </label>
+                </li>
+                <li class="form__item">
+                  <label class="form__control">
+                    <input class="form__field visually-hidden" type="radio" id="animals" name="animals">
+                    <span class="form__control-mark"></span>
+                    <span class="form__label">Только животное</span>
+                  </label>
+                </li>
+                <li class="form__item">
+                  <label class="form__control">
+                    <input class="form__field visually-hidden" type="radio" id="vegetable" name="vegetable">
+                    <span class="form__control-mark"></span>
+                    <span class="form__label">Только растительное</span>
+                  </label>
+                </li>
+                <li class="form__item">
+                  <label class="form__control">
+                    <input class="form__field visually-hidden" type="radio" id="milk-free" name="milk-free" disabled>
+                    <span class="form__control-mark"></span>
+                    <span class="form__label">Без молока</span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="form__fieldset">
+              <legend class="form__legend legend">Страна произрастания</legend>
+              <ul class="form__list">
+                <li class="form__item">
+                  <label class="toggle-switch">
+                    <input class="toggle-switch__field visually-hidden" type="checkbox" id="brazil" name="brazil"
+                      checked>
+                    <span class="toggle-switch__inner">
+                      <span class="toggle-switch__slider"></span>
+                    </span>
+                    <span class="form__label">Бразилия</span>
+                  </label>
+                </li>
+                <li class="form__item">
+                  <label class="toggle-switch">
+                    <input class="toggle-switch__field visually-hidden" type="checkbox" id="ethiopia" name="ethiopia">
+                    <span class="toggle-switch__inner">
+                      <span class="toggle-switch__slider"></span>
+                    </span>
+                    <span class="form__label">Эфиопия</span>
+                  </label>
+                </li>
+                <li class="form__item">
+                  <label class="toggle-switch">
+                    <input class="toggle-switch__field visually-hidden" type="checkbox" id="colombia" name="colombia">
+                    <span class="toggle-switch__inner">
+                      <span class="toggle-switch__slider"></span>
+                    </span>
+                    <span class="form__label">Колумбия</span>
+                  </label>
+                </li>
+                <li class="form__item">
+                  <label class="toggle-switch">
+                    <input class="toggle-switch__field visually-hidden" type="checkbox" id="costa-rica"
+                      name="costa-rica">
+                    <span class="toggle-switch__inner">
+                      <span class="toggle-switch__slider"></span>
+                    </span>
+                    <span class="form__label">Коста-Рика</span>
+                  </label>
+                </li>
+                <li class="form__item">
+                  <label class="toggle-switch">
+                    <input class="toggle-switch__field visually-hidden" type="checkbox" id="peru" name="peru" disabled>
+                    <span class="toggle-switch__inner">
+                      <span class="toggle-switch__slider"></span>
+                    </span>
+                    <span class="form__label">Перу</span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <div class="form__button-wrapper">
+              <button class="button" type="submit">Применить</button>
+              <button class="button button--primary" type="reset">Сбросить</button>
+            </div>
+
+          </form>
         </div>
       </section>
     </main>
@@ -137,6 +252,7 @@
     <footer class="footer"></footer>
   </div>
 
+  <script src="js/nouislider.js" defer></script>
   <script src="js/main.js" type="module"></script>
 </body>
 

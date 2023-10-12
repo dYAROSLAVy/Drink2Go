@@ -11,4 +11,9 @@
   color: $color-default-white;
   border: 0;
   border-radius: 4px;
+
+  &--primary {
+    background-color: $color-default-white;
+    color: $color-slate-blue;
+  }
 }
