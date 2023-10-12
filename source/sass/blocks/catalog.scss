@@ -1,0 +1,15 @@
+.catalog {
+  padding: 50px 0 44px;
+  background-color: $color-white-smoke;
+}
+
+.catalog .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px 0;
+}
+
+.catalog__title:not(:last-child) {
+  margin-bottom: 16px;
+}
