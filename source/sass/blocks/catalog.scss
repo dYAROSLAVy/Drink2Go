@@ -13,3 +13,34 @@
 .catalog__title:not(:last-child) {
   margin-bottom: 16px;
 }
+
+.catalog__form:not(:last-child) {
+  margin-bottom: 36px;
+}
+
+.catalog__select-wrapper {
+  display: flex;
+  align-items: center;
+  width: 280px;
+  gap: 10px;
+}
+
+.catalog__select-label {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.catalog__select-wrapper:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.catalog__list {
+  @include list-reset;
+  display: grid;
+  gap: 20px;
+
+  &:not(:last-child) {
+    margin-bottom: 36px;
+  }
+}

@@ -1,0 +1,12 @@
+.select {
+  width: 165px;
+  padding: 4px 10px;
+  font-family: $ff-mont;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  color: $color-slate-blue;
+  appearance: none;
+  background: url("/images/icons/stack.svg#select") no-repeat 95% / 10px 6px;
+  border: none;
+}

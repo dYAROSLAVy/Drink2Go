@@ -1,0 +1,23 @@
+.product {
+  min-height: 420px;
+  padding: 40px 20px 20px;
+  background-color: $color-default-white;
+}
+
+.product__link {
+  display: grid;
+  justify-content: center;
+  grid-template-rows: 188px;
+
+  &:not(:last-child) {
+    margin-bottom: 24px;
+  }
+}
+
+.product__title:not(:last-child) {
+  margin-bottom: 4px;
+}
+
+.product__text:not(:last-child) {
+  margin-bottom: 16px;
+}

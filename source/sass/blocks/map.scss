@@ -1,0 +1,15 @@
+.map {
+  background-color: $color-white-smoke;
+}
+
+.map__inner {
+  display: flex;
+  justify-content: center;
+  height: 420px;
+}
+
+.map__img {
+  width: 100vw;
+  height: 420px;
+  object-fit: cover;
+}
