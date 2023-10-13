@@ -10,6 +10,10 @@
   border: 0;
 }
 
+.form__label {
+  word-break: break-word;
+}
+
 .form__legend:not(:last-child) {
   margin-bottom: 20px;
 }

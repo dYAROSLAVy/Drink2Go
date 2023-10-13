@@ -8,6 +8,7 @@
 .toggle-switch__inner {
   position: relative;
   display: inline-block;
+  flex-shrink: 0;
   width: 42px;
   height: 24px;
   cursor: pointer;

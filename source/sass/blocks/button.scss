@@ -2,6 +2,7 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  min-height: 40px;
   padding: 8px 20px;
   margin: 0;
   font-family: inherit;
@@ -11,6 +12,7 @@
   color: $color-default-white;
   border: 0;
   border-radius: 4px;
+  word-break: break-word;
 
   &--primary {
     background-color: $color-default-white;
@@ -18,6 +20,7 @@
   }
 
   &--secondary {
+    min-height: 36px;
     font-size: 14px;
     line-height: 20px;
     padding-left: 46px;

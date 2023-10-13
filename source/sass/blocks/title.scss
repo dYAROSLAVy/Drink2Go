@@ -2,6 +2,7 @@
   margin: 0;
   font-weight: 700;
   text-align: center;
+  word-break: break-word;
 }
 
 .title--primary {
@@ -12,6 +13,12 @@
 .title--secondary {
   font-size: 18px;
   line-height: 32px;
+}
+
+.title--tertiary {
+  font-size: 14px;
+  line-height: 20px;
+  color: $color-slate-blue;
 }
 
 .title--text-align {

@@ -69,10 +69,12 @@
         <div class="container">
           <div class="hero__inner">
             <h1 class="visually-hidden">Интернет-магазин Drink2Go по продаже кофейных напитков</h1>
-            <picture>
-              <img src="images/hero.png" srcset="images/hero@2x.png" width="280" height="280"
-                alt="Изображение стильной бежевой жестяной банки с напитком Декаф Флэт Уайт">
-            </picture>
+            <div class="hero__picture-wrapper">
+              <picture>
+                <img src="images/hero.png" srcset="images/hero@2x.png" width="280" height="280"
+                  alt="Изображение стильной бежевой жестяной банки с напитком Декаф Флэт Уайт">
+              </picture>
+            </div>
             <span class="badge">НОВИНКА!</span>
             <h2 class="hero__title title">Декаф Флэт Уайт</h2>
             <p class="hero__description text">Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским
@@ -95,36 +97,44 @@
           <ul class="features__list">
             <li class="features__list-item">
               <div class="feature">
-                <svg class="feature__img" width="52" height="56">
-                  <use href="images/icons/stack.svg#clock"></use>
-                </svg>
+                <div class="feature__picture-wrapper">
+                  <svg width="52" height="56">
+                    <use href="images/icons/stack.svg#clock"></use>
+                  </svg>
+                </div>
                 <h3 class="title title--secondary">Скорость</h3>
                 <p class="text">Готовый напиток всегда под рукой — просто открой банку</p>
               </div>
             </li>
             <li class="features__list-item">
               <div class="feature">
-                <svg class="feature__img" width="52" height="56">
-                  <use href="images/icons/stack.svg#shield"></use>
-                </svg>
+                <div class="feature__picture-wrapper">
+                  <svg width="52" height="56">
+                    <use href="images/icons/stack.svg#shield"></use>
+                  </svg>
+                </div>
                 <h3 class="title title--secondary">Удобство</h3>
                 <p class="text">Легко помещается и в карман,<br>и в маленькую сумочку</p>
               </div>
             </li>
             <li class="features__list-item">
               <div class="feature">
-                <svg class="feature__img" width="52" height="56">
-                  <use href="images/icons/stack.svg#lightning"></use>
-                </svg>
+                <div class="feature__picture-wrapper">
+                  <svg class="feature__img" width="52" height="56">
+                    <use href="images/icons/stack.svg#lightning"></use>
+                  </svg>
+                </div>
                 <h3 class="title title--secondary">Бодрость</h3>
                 <p class="text">Сбалансированная доза кофеина даст мощный заряд энергии</p>
               </div>
             </li>
             <li class="features__list-item">
               <div class="feature">
-                <svg class="feature__img" width="52" height="56">
-                  <use href="images/icons/stack.svg#sheet"></use>
-                </svg>
+                <div class="feature__picture-wrapper">
+                  <svg width="52" height="56">
+                    <use href="images/icons/stack.svg#sheet"></use>
+                  </svg>
+                </div>
                 <h3 class="title title--secondary">Экологичность</h3>
                 <p class="text">Вся упаковка сделана <br>из перерабатываемых материалов</p>
               </div>
@@ -398,7 +408,7 @@
 
     <footer class="footer">
       <div class="container">
-        <div class="footer__inner">
+        <div class="inner inner--padd-top">
           <a class="footer__logo" href="#">
             <img src="images/logo-footer-mob.svg" width="82" height="36" alt="Логотип сайта Drink2Go">
           </a>
@@ -430,7 +440,58 @@
           </ul>
         </div>
         <div class="footer__nav-wrapper">
-          <nav class="footer__nav"></nav>
+          <nav class="footer-nav">
+            <section class="inner inner--grid">
+              <h2 class="footer-nav__title title title--tertiary title--text-align">Интернет-магазин</h2>
+              <ul class="footer-nav__list">
+                <li>
+                  <a class="footer-nav__link" href="#">КАТАЛОГ</a>
+                </li>
+                <li>
+                  <a class="footer-nav__link" href="#">ДОСТАВКА</a>
+                </li>
+                <li>
+                  <a class="footer-nav__link" href="#">СПОСОБЫ ОПЛАТЫ</a>
+                </li>
+                <li class="footer-nav__item">
+                  <a class="footer-nav__link" href="#">О НАС</a>
+                </li>
+              </ul>
+            </section>
+            <section class="inner inner--grid">
+              <h2 class="footer-nav__title title title--tertiary title--text-align">Медиа</h2>
+              <ul class="footer-nav__list">
+                <li>
+                  <a class="footer-nav__link" href="#">БЛОГ</a>
+                </li>
+                <li>
+                  <a class="footer-nav__link" href="#">ИНФОРМАЦИЯ ДЛЯ СМИ</a>
+                </li>
+                <li>
+                  <a class="footer-nav__link" href="#">ПРАВОВАЯ ИНФОРМАЦИЯ</a>
+                </li>
+              </ul>
+            </section>
+            <section class="inner inner--grid inner--padd-bott">
+              <h2 class="footer-nav__title title title--tertiary title--text-align">Контакты</h2>
+              <ul class="footer-nav__list">
+                <li>
+                  <span class="footer-nav__link footer-nav__link--primary footer-nav__link--add"
+                    href="#">Санкт-Петербург, набережная реки Карповки, дом 5</span>
+                </li>
+                <li>
+                  <a class="footer-nav__link footer-nav__link--primary footer-nav__link--tel" href="tel:+79999999999">+7
+                    (999) 999-99-99</a>
+                </li>
+              </ul>
+            </section>
+            <a class="footer-nav__copyright" href="https://htmlacademy.ru/intensive/adaptive">
+              <span>Разработано в HTML Academy</span>
+              <svg width="12" height="16">
+                <use href="images/icons/stack.svg#academy"></use>
+              </svg>
+            </a>
+          </nav>
         </div>
       </div>
     </footer>

@@ -21,8 +21,10 @@
 .catalog__select-wrapper {
   display: flex;
   align-items: center;
-  width: 280px;
-  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  word-break: break-word;
 }
 
 .catalog__select-label {

@@ -1,0 +1,29 @@
+.inner {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+
+  &::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 100vw;
+    background-color: $color-magnolia;
+    left: -20px;
+    bottom: -1px;
+  }
+
+  &--padd-top {
+    padding-top: 0;
+  }
+
+  &--grid {
+    display: grid;
+  }
+
+  &--padd-bott {
+    padding-bottom: 14px;
+  }
+}

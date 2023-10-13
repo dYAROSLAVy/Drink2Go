@@ -14,8 +14,10 @@
 }
 
 .header__logo {
+  align-self: start;
   width: 32px;
   height: 36px;
+  margin-top: 2px
 }
 
 .header a {
