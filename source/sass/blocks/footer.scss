@@ -2,9 +2,16 @@
   flex-shrink: 0;
   min-height: 40px;
   padding: 20px 0;
+  overflow: hidden;
 }
 
 .footer__logo {
+  display: flex;
+  flex-shrink: 0;
   width: 82px;
   height: 36px;
+}
+
+.footer__socials {
+  max-width: 60%;
 }

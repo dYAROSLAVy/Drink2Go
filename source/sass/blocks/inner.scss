@@ -10,8 +10,18 @@
     position: absolute;
     height: 1px;
     width: 100vw;
-    background-color: $color-magnolia;
     left: -20px;
+    background-color: $color-magnolia;
+    bottom: -1px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 100vw;
+    background-color: $color-magnolia;
+    left: -100vw;
     bottom: -1px;
   }
 

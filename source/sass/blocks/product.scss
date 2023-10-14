@@ -1,5 +1,6 @@
 .product {
   min-height: 420px;
+  width: 280px;
   padding: 40px 20px 20px;
   background-color: $color-default-white;
 }
@@ -8,6 +9,7 @@
   display: grid;
   justify-content: center;
   grid-template-rows: 188px;
+  grid-template-columns: 130px;
 
   &:not(:last-child) {
     margin-bottom: 24px;

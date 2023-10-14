@@ -4,6 +4,7 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 10px 20px;
+  word-break: break-word;
 
   &--just-content {
     justify-content: space-between;

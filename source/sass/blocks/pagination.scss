@@ -1,6 +1,7 @@
 .pagination {
   @include list-reset;
   display: flex;
+  flex-wrap: wrap;
   gap: 10px 20px;
 }
 
@@ -11,12 +12,13 @@
   align-items: center;
   flex-wrap: wrap;
   min-width: 40px;
-  height: 40px;
+  min-height: 40px;
   padding: 8px;
   font-size: 16px;
   line-height: 24px;
   color: $color-slate-blue;
   background-color: $color-default-white;
+  word-break: break-word;
 
   &--current {
     color: $color-default-black;

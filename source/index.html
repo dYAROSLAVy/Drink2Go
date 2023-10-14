@@ -253,7 +253,6 @@
               <button class="button" type="submit">Применить</button>
               <button class="button button--primary" type="reset">Сбросить</button>
             </div>
-
           </form>
           <div class="catalog__select-wrapper">
             <label class="catalog__select-label" for="catalog-sorting">Сортировка:</label>
@@ -412,7 +411,7 @@
           <a class="footer__logo" href="#">
             <img src="images/logo-footer-mob.svg" width="82" height="36" alt="Логотип сайта Drink2Go">
           </a>
-          <ul class="socials">
+          <ul class="footer__socials socials">
             <li class="socials__item">
               <a class="socials__link" href="#">
                 <span class="visually-hidden">ВКонтакте</span>
@@ -476,8 +475,7 @@
               <h2 class="footer-nav__title title title--tertiary title--text-align">Контакты</h2>
               <ul class="footer-nav__list">
                 <li>
-                  <span class="footer-nav__link footer-nav__link--primary footer-nav__link--add"
-                    href="#">Санкт-Петербург, набережная реки Карповки, дом 5</span>
+                  <span class="footer-nav__link footer-nav__link--primary footer-nav__link--add">Санкт-Петербург, набережная реки Карповки, дом 5</span>
                 </li>
                 <li>
                   <a class="footer-nav__link footer-nav__link--primary footer-nav__link--tel" href="tel:+79999999999">+7
@@ -487,9 +485,11 @@
             </section>
             <a class="footer-nav__copyright" href="https://htmlacademy.ru/intensive/adaptive">
               <span>Разработано в HTML Academy</span>
-              <svg width="12" height="16">
-                <use href="images/icons/stack.svg#academy"></use>
-              </svg>
+              <div class="footer-nav__icon-wrapper">
+                <svg width="12" height="16">
+                  <use href="images/icons/stack.svg#academy"></use>
+                </svg>
+              </div>
             </a>
           </nav>
         </div>

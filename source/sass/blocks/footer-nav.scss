@@ -14,6 +14,7 @@
   font-weight: 500;
   line-height: 16px;
   letter-spacing: 0.24px;
+  word-break: break-word;
 
   &--primary {
     gap: 6px;
@@ -23,6 +24,7 @@
     line-height: 20px;
     letter-spacing: 0;
   }
+
   &--add {
     &::before {
       content: "";
@@ -57,10 +59,18 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 4px;
   padding: 20px 0 10px;
   font-size: 12px;
   font-weight: 400;
   line-height: 16px;
   color: $color-silver;
+  word-break: break-word;
+}
+
+.footer-nav__icon-wrapper {
+  display: flex;
+  width: 12px;
+  height: 16px;
 }
