@@ -40,7 +40,35 @@
   width: 24px;
   height: 24px;
   background-color: $color-default-white;
-  border: solid 2px $color-slate-blue;
+  border: solid 2px $color-silver;
+  border-radius: 50%;
+}
+
+.form__field[type="radio"]:hover:not(:disabled) ~ .form__control-mark {
+  border-color: $color-medium-purple;
+}
+
+.form__field[type="radio"]:hover:not(:disabled) + .form__control-mark::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 16px;
+  height: 16px;
+  background: $color-slate-blue-op;
+  border-radius: 50%;
+}
+
+.form__field[type="radio"]:focus:not(:disabled) ~ .form__control-mark::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 16px;
+  height: 16px;
+  background: $color-slate-blue-op;
   border-radius: 50%;
 }
 
@@ -54,6 +82,22 @@
   height: 16px;
   background: $color-slate-blue;
   border-radius: 50%;
+}
+
+.form__field[type="radio"]:checked + .form__control-mark {
+  border-color: $color-slate-blue;
+}
+
+.form__field[type="radio"]:disabled + .form__control-mark {
+  border-color: $color-gainsboro;
+}
+
+.form__field[type="radio"]:disabled + .form__control-mark::after {
+  background-color: $color-gainsboro;
+}
+
+.form__field[type="radio"]:disabled ~ .form__label {
+  color: $color-gainsboro;
 }
 
 .form__button-wrapper {

@@ -16,6 +16,11 @@
   }
 }
 
+.product__picture {
+  width: 130px;
+  height: 188px;
+}
+
 .product__title:not(:last-child) {
   margin-bottom: 4px;
 }

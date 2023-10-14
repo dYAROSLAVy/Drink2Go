@@ -67,6 +67,19 @@
   line-height: 16px;
   color: $color-silver;
   word-break: break-word;
+
+  &:hover {
+    color: $color-medium-purple;
+  }
+
+  &:focus {
+    color: $color-medium-purple;
+    outline: none;
+  }
+
+  &:active {
+    color: $color-royal-purple;
+  }
 }
 
 .footer-nav__icon-wrapper {

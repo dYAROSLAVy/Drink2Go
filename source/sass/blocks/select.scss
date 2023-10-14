@@ -10,4 +10,18 @@
   appearance: none;
   background: url("/images/icons/stack.svg#select") no-repeat right 7px center / 10px 6px;
   border: none;
+
+  &:hover {
+    background-color: $color-magnolia;
+  }
+
+  &:focus {
+    background-color: $color-magnolia;
+    outline: none;
+  }
+
+  &:disabled {
+    background-color: $color-gainsboro;
+    color: $color-default-white;
+  }
 }

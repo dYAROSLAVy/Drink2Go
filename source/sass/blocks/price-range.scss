@@ -13,9 +13,30 @@
   color: $color-default-black;
   border: 2px solid $color-medium-purple;
   border-radius: 4px;
+  appearance: textfield;
+
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    appearance: none;
+  }
 
   &::placeholder {
     color: $color-silver;
+  }
+
+  &:hover {
+    border-color: $color-slate-blue;
+  }
+
+  &:not(:placeholder-shown):focus {
+    border-color: $color-royal-purple;
+    outline: none;
+  }
+
+  &:disabled {
+    border-color: $color-gainsboro;
+    color: $color-silver;
+    background-color: $color-white-smoke;
   }
 }
 

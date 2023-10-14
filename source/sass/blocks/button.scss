@@ -14,9 +14,54 @@
   border-radius: 4px;
   word-break: break-word;
 
+  &:hover {
+    background-color: $color-medium-purple;
+  }
+
+  &:focus {
+    background-color: $color-medium-purple;
+    outline: none;
+  }
+
+  &:active {
+    background-color: $color-royal-purple;
+  }
+
+  &:disabled {
+    background-color: $color-silver;
+  }
+
+  &.disabled {
+    background-color: $color-silver;
+  }
+
+
   &--primary {
     background-color: $color-default-white;
     color: $color-slate-blue;
+
+    &:hover {
+      color: $color-default-white;
+    }
+
+    &:focus {
+      color: $color-default-white;
+      outline: none;
+    }
+
+    &:active {
+      color: $color-default-white;
+    }
+
+    &:disabled {
+      background-color: $color-gainsboro;
+      color: $color-default-white;
+    }
+
+    &.disabled {
+      background-color: $color-gainsboro;
+      color: $color-default-white;
+    }
   }
 
   &--secondary {

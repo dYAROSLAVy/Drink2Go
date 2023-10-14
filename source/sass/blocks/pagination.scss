@@ -24,4 +24,17 @@
     color: $color-default-black;
     background-color: $color-transparent;
   }
+
+  &:hover {
+    color: $color-default-white;
+  }
+
+  &:focus {
+    color: $color-default-white;
+  }
+
+  &.disabled {
+    color: $color-default-white;
+    background-color: $color-gainsboro;
+  }
 }
