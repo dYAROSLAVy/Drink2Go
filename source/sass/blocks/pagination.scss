@@ -1,0 +1,40 @@
+.pagination {
+  @include list-reset;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 20px;
+}
+
+.pagination__link {
+  @include a-reset;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  min-width: 40px;
+  min-height: 40px;
+  padding: 8px;
+  font-size: 16px;
+  line-height: 24px;
+  color: $color-slate-blue;
+  background-color: $color-default-white;
+  word-break: break-word;
+
+  &--current {
+    color: $color-default-black;
+    background-color: $color-transparent;
+  }
+
+  &:hover {
+    color: $color-default-white;
+  }
+
+  &:focus {
+    color: $color-default-white;
+  }
+
+  &.disabled {
+    color: $color-default-white;
+    background-color: $color-gainsboro;
+  }
+}

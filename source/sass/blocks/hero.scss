@@ -21,6 +21,20 @@
   padding: 5px 0;
 }
 
+.hero__picture-link {
+  width: 280px;
+  height: 280px;
+
+  &:not(:last-child) {
+    margin-bottom: 5px;
+  }
+}
+
+.hero__picture {
+  width: 280px;
+  height: 280px;
+}
+
 .hero__order {
   padding: 10px;
 }

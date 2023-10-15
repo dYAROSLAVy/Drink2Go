@@ -2,6 +2,7 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  min-height: 40px;
   padding: 8px 20px;
   margin: 0;
   font-family: inherit;
@@ -11,9 +12,61 @@
   color: $color-default-white;
   border: 0;
   border-radius: 4px;
+  word-break: break-word;
+
+  &:hover {
+    background-color: $color-medium-purple;
+  }
+
+  &:focus {
+    background-color: $color-medium-purple;
+  }
+
+  &:active {
+    background-color: $color-royal-purple;
+  }
+
+  &:disabled {
+    background-color: $color-silver;
+  }
+
+  &.disabled {
+    background-color: $color-silver;
+  }
+
 
   &--primary {
     background-color: $color-default-white;
     color: $color-slate-blue;
+
+    &:hover {
+      color: $color-default-white;
+    }
+
+    &:focus {
+      color: $color-default-white;
+    }
+
+    &:active {
+      color: $color-default-white;
+    }
+
+    &:disabled {
+      background-color: $color-gainsboro;
+      color: $color-default-white;
+    }
+
+    &.disabled {
+      background-color: $color-gainsboro;
+      color: $color-default-white;
+    }
+  }
+
+  &--secondary {
+    min-height: 36px;
+    font-size: 14px;
+    line-height: 20px;
+    padding-left: 46px;
+    background: $color-slate-blue url("/images/icons/stack.svg#basket+") no-repeat 20px / 20px 16px;
   }
 }

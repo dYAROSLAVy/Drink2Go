@@ -61,9 +61,34 @@
   cursor: default;
 }
 
-.noUi-touch-area {
-  height: 100%;
-  width: 100%;
+.noUi-horizontal:not([disabled]) .noUi-handle:hover .noUi-touch-area {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  border-radius: 50%;
+  background-color: $color-slate-blue-op;
+}
+
+.noUi-base .noUi-handle:focus {
+  outline-offset: 2px;
+}
+
+.noUi-horizontal:not([disabled]) .noUi-handle:focus .noUi-touch-area {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  border-radius: 50%;
+  background-color: $color-slate-blue-op;
+}
+
+.noUi-horizontal:not([disabled]) .noUi-handle:active .noUi-touch-area {
+  background-color: $color-slate-blue;
 }
 
 .noUi-state-tap .noUi-connect,
@@ -114,12 +139,13 @@
   cursor: ns-resize;
 }
 
-.noUi-active {
-  box-shadow: inset 0 0 1px #ffffff, inset 0 1px 7px #dddddd, 0 3px 6px -3px #bbbbbb;
+[disabled] .noUi-connect {
+  background: $color-silver;
 }
 
-[disabled] .noUi-connect {
-  background: #b8b8b8;
+[disabled] .noUi-base .noUi-handle {
+  border-color: $color-silver;
+  outline: none;
 }
 
 [disabled].noUi-target,

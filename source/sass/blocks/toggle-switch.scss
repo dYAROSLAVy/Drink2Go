@@ -8,6 +8,7 @@
 .toggle-switch__inner {
   position: relative;
   display: inline-block;
+  flex-shrink: 0;
   width: 42px;
   height: 24px;
   cursor: pointer;
@@ -22,6 +23,7 @@
   left: 0;
   right: 0;
   bottom: 0;
+  border: 2px solid $color-silver;
   border-radius: 34px;
   background-color: $color-silver;
   transition: 0.4s;
@@ -29,8 +31,7 @@
   &::before {
     content: "";
     position: absolute;
-    top: 2px;
-    right: 20px;
+    right: 18px;
     height: 20px;
     width: 20px;
     border-radius: 50%;
@@ -41,12 +42,40 @@
 
 .toggle-switch__field:checked + .toggle-switch__inner > .toggle-switch__slider {
   background-color: $color-slate-blue;
-}
-
-.toggle-switch__field:focus + .toggle-switch__inner > .toggle-switch__slider {
-  box-shadow: 0 0 1px #2196f3;
+  border-color: $color-slate-blue;
 }
 
 .toggle-switch__field:checked + .toggle-switch__inner > .toggle-switch__slider::before {
   transform: translateX(18px);
+}
+
+.toggle-switch__field:hover.toggle-switch__field:not(:disabled) + .toggle-switch__inner > .toggle-switch__slider {
+  background-color: $color-slate-blue-op;
+  border-color: $color-medium-purple;
+}
+
+.toggle-switch__field:focus + .toggle-switch__inner > .toggle-switch__slider {
+  background-color: $color-slate-blue-op;
+  border-color: $color-slate-blue;
+  outline: -webkit-focus-ring-color auto 1px;
+  outline-offset: 2px;
+}
+
+.toggle-switch__field:not(:checked).toggle-switch__field:disabled + .toggle-switch__inner > .toggle-switch__slider {
+  background-color: $color-gainsboro;
+  border-color: $color-gainsboro;
+}
+
+.toggle-switch__field:checked.toggle-switch__field:disabled + .toggle-switch__inner > .toggle-switch__slider {
+  background-color: $color-gainsboro;
+  border-color: $color-gainsboro;
+
+  &::before {
+    background-color: $color-silver;
+  }
+}
+
+.toggle-switch__field:checked.toggle-switch__field:disabled ~ .form__label,
+.toggle-switch__field:not(:checked).toggle-switch__field:disabled ~ .form__label {
+  color: $color-silver;
 }

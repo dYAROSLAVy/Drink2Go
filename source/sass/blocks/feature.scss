@@ -6,6 +6,11 @@
   gap: 4px;
 }
 
-.feature__img:not(:last-child) {
-  margin-bottom: 6px;
+.feature__picture-wrapper {
+  width: 52px;
+  height: 56px;
+
+  &:not(:last-child) {
+    margin-bottom: 6px;
+  }
 }

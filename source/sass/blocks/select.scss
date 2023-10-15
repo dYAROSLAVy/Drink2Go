@@ -1,0 +1,30 @@
+.select {
+  min-width: 165px;
+  max-width: 280px;
+  padding: 4px 20px 4px 15px;
+  font-family: $ff-mont;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  color: $color-slate-blue;
+  appearance: none;
+  background: url("/images/icons/stack.svg#select") no-repeat right 7px center / 10px 6px;
+  border: none;
+
+  &:hover {
+    background-color: $color-magnolia;
+  }
+
+  &:focus {
+    background-color: $color-magnolia;
+  }
+
+  &:active {
+    background: $color-gainsboro url("/images/icons/stack.svg#select-active") no-repeat right 7px center / 10px 6px;
+  }
+
+  &:disabled {
+    background-color: $color-gainsboro;
+    color: $color-default-white;
+  }
+}
