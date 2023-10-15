@@ -30,7 +30,7 @@
 
   &:not(:placeholder-shown):focus {
     border-color: $color-royal-purple;
-    outline: none;
+    outline-offset: 2px;
   }
 
   &:disabled {

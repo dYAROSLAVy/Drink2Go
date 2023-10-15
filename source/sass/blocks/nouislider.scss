@@ -73,7 +73,7 @@
 }
 
 .noUi-base .noUi-handle:focus {
-  outline: none;
+  outline-offset: 2px;
 }
 
 .noUi-horizontal:not([disabled]) .noUi-handle:focus .noUi-touch-area {

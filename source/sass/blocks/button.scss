@@ -20,7 +20,6 @@
 
   &:focus {
     background-color: $color-medium-purple;
-    outline: none;
   }
 
   &:active {
@@ -46,7 +45,6 @@
 
     &:focus {
       color: $color-default-white;
-      outline: none;
     }
 
     &:active {

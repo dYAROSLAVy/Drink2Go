@@ -17,7 +17,10 @@
 
   &:focus {
     background-color: $color-magnolia;
-    outline: none;
+  }
+
+  &:active {
+    background: $color-gainsboro url("/images/icons/stack.svg#select-active") no-repeat right 7px center / 10px 6px;
   }
 
   &:disabled {

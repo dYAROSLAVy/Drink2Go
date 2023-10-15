@@ -60,6 +60,11 @@
   border-radius: 50%;
 }
 
+.form__field[type="radio"]:focus:not(:disabled) ~ .form__control-mark {
+  outline: -webkit-focus-ring-color auto 1px;
+  outline-offset: 2px;
+}
+
 .form__field[type="radio"]:focus:not(:disabled) ~ .form__control-mark::after {
   content: "";
   position: absolute;
