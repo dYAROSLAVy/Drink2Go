@@ -16,6 +16,18 @@
   letter-spacing: 0.24px;
   word-break: break-word;
 
+  &:hover:not(.footer-nav__link--add) {
+    color: $color-medium-purple;
+  }
+
+  &:focus:not(.footer-nav__link--add) {
+    color: $color-medium-purple;
+  }
+
+  &:active:not(.footer-nav__link--add) {
+    color: $color-royal-purple;
+  }
+
   &--primary {
     gap: 6px;
     padding-bottom: 5px;

@@ -1,40 +1,63 @@
 .hero {
+  position: relative;
   padding: 20px 0 49px 0;
-  background-color: $color-bridal-heath;
 }
 
-.hero__inner {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 5px;
-}
-
-.hero__title {
-  font-size: 36px;
-  line-height: 48px;
-  letter-spacing: 0.72px;
-  text-align: center;
-}
-
-.hero__description {
-  padding: 5px 0;
-}
-
-.hero__picture-link {
+.hero__slider-wrapper {
   width: 280px;
-  height: 280px;
+  height: 587px;
+  overflow: hidden;
+  transition: transform 0.5s ease-in-out;
+}
 
-  &:not(:last-child) {
-    margin-bottom: 5px;
+.hero__slider-prev-button,
+.hero__slider-next-button {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 100%;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  color: $color-slate-blue;
+
+  &:disabled {
+    color: $color-silver;
   }
 }
 
-.hero__picture {
-  width: 280px;
-  height: 280px;
+.hero__slider-prev-button {
+  left: 0;
+
+  &:hover:not(:disabled) {
+    background: $white-to-transparent;
+  }
+
+  &:focus:not(:disabled) {
+    background: $white-to-transparent;
+  }
+
+  &:active:not(:disabled) {
+    background: $transparent-to-slate-blue;
+  }
 }
 
-.hero__order {
-  padding: 10px;
+.hero__slider-next-button {
+  right: 0;
+
+  &:hover:not(:disabled) {
+    background: $transparent-to-white;
+  }
+
+  &:focus:not(:disabled) {
+    background: $transparent-to-white;
+  }
+
+  &:active:not(:disabled) {
+    background: $slate-blue-to-transparent;
+  }
 }

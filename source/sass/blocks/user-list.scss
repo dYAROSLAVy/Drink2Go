@@ -11,4 +11,21 @@
   padding: 12px;
   width: 40px;
   height: 40px;
+
+  @include vp-tab {
+    &:hover {
+      color: $color-slate-blue;
+    }
+  }
+
+  @include vp-tab {
+    &:focus {
+      color: $color-slate-blue;
+    }
+  }
+
+  &:active {
+    color: $color-slate-blue;
+    background-color: $color-magnolia;
+  }
 }

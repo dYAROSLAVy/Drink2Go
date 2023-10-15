@@ -15,10 +15,32 @@ $color-medium-purple: #9070ec;
 $color-slate-blue-op: rgba(120, 89, 207, 0.25);
 $color-royal-purple: #593cac;
 $color-gainsboro: #e2e2e2;
-$color-white-smoke : #f8f8f8;
-$color-bridal-heath : #f3ebe1;
-$color-lavender : #eae6fc;
-$color-solitude : #e5e6e8;
+$color-white-smoke: #f8f8f8;
+$color-bridal-heath: #f3ebe1;
+$color-lavender: #eae6fc;
+$color-solitude: #e5e6e8;
+
+// Gradient
+$white-to-transparent: linear-gradient(
+  90deg,
+  #ffffff 0%,
+  rgba(255, 255, 255, 0) 100%
+);
+$transparent-to-white: linear-gradient(
+  270deg,
+  #ffffff 0%,
+  rgba(255, 255, 255, 0) 100%
+);
+$transparent-to-slate-blue: linear-gradient(
+  90deg,
+  rgba(120, 89, 207, 0.25) 0%,
+  rgba(120, 89, 207, 0) 100%
+);
+$slate-blue-to-transparent: linear-gradient(
+  270deg,
+  rgba(120, 89, 207, 0.25) 0%,
+  rgba(120, 89, 207, 0) 100%
+);
 
 // Typography
 // ---------------------------------

@@ -10,6 +10,7 @@
   appearance: none;
   background: url("/images/icons/stack.svg#select") no-repeat right 7px center / 10px 6px;
   border: none;
+  cursor: pointer;
 
   &:hover {
     background-color: $color-magnolia;
@@ -20,7 +21,7 @@
   }
 
   &:active {
-    background: $color-gainsboro url("/images/icons/stack.svg#select-active") no-repeat right 7px center / 10px 6px;
+    background: $color-white-smoke url("/images/icons/stack.svg#select-active") no-repeat right 7px center / 10px 6px;
   }
 
   &:disabled {

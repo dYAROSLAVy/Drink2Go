@@ -17,6 +17,10 @@
   background-color: $color-default-white;
   border: none;
 
+  &:active {
+    background-color: $color-magnolia;
+  }
+
   @include vp-tab {
     display: none;
   }

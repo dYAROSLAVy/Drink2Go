@@ -20,7 +20,7 @@
         <nav class="nav nav--closed">
           <ul class="nav__list site-list">
             <li class="site-list__item">
-              <span class="site-list__link">ГЛАВНАЯ</span>
+              <span class="site-list__link site-list__link--current">ГЛАВНАЯ</span>
             </li>
             <li class="site-list__item">
               <a class="site-list__link" href="#">КАТАЛОГ</a>
@@ -66,27 +66,80 @@
 
     <main class="main">
       <section class="hero">
+        <h1 class="visually-hidden">Интернет-магазин Drink2Go по продаже кофейных напитков</h1>
         <div class="container">
-          <div class="hero__inner">
-            <h1 class="visually-hidden">Интернет-магазин Drink2Go по продаже кофейных напитков</h1>
-            <a class="hero__picture-link" href="#">
-              <picture>
-                <img class="hero__picture" src="images/hero.png" srcset="images/hero@2x.png" width="280" height="280"
-                  alt="Изображение стильной бежевой жестяной банки с напитком Декаф Флэт Уайт">
-              </picture>
-            </a>
-            <span class="badge">НОВИНКА!</span>
-            <h2 class="hero__title title">Декаф Флэт Уайт</h2>
-            <p class="hero__description text">Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским
-              молоком —
-              то, что нужно для расслабления после тяжёлого рабочего дня</p>
-            <div class="hero__order order">
-              <div class="order__inner">
-                <del class="order__old-price">295₽</del>
-                <span class="order__price">225₽</span>
-              </div>
-              <a class="order__button button" href="#">Заказать</a>
+          <div>
+            <div class="hero__slider-wrapper">
+              <article class="slide slide--bgc-1">
+                <div class="slide__inner">
+                  <div class="slide__picture-wrapper">
+                    <picture>
+                      <img class="slide__picture" src="images/hero.png" srcset="images/hero@2x.png" width="280"
+                        height="280" alt="Изображение стильной бежевой жестяной банки с напитком Декаф Флэт Уайт">
+                    </picture>
+                  </div>
+                  <span class="badge">НОВИНКА!</span>
+                  <h2 class="slide__title title">Декаф Флэт Уайт</h2>
+                  <p class="slide__description text">Свежесваренный кофе без кофеина из Эфиопии с натуральным
+                    фермерским молоком — то, что нужно для расслабления после тяжёлого рабочего дня</p>
+                  <div class="slide__order order">
+                    <div class="order__inner">
+                      <del class="order__old-price">295₽</del>
+                      <span class="order__price">225₽</span>
+                    </div>
+                    <a class="order__button button" href="#">Заказать</a>
+                  </div>
+                </div>
+              </article>
+              <article class="slide slide--bgc-2">
+                <div class="slide__inner">
+                  <picture>
+                    <img class="slide__picture" src="images/hero-2.png" srcset="images/hero-2@2x.png" width="280"
+                      height="280" alt="Изображение стильной сиреневой жестяной банки с напитком Лавандовый Латте">
+                  </picture>
+                  <span class="badge">НОВИНКА!</span>
+                  <h2 class="slide__title title">Лавандовый Латте</h2>
+                  <p class="slide__description text">Невероятное сочетание перуанской высокогорной арабики с молоком
+                    ламы и лавандовым сиропом унесёт вас прямо на вершину Радужных гор</p>
+                  <div class="slide__order order">
+                    <div class="order__inner">
+                      <del class="order__old-price">285₽</del>
+                      <span class="order__price">265₽</span>
+                    </div>
+                    <a class="order__button button" href="#">Заказать</a>
+                  </div>
+                </div>
+              </article>
+              <article class="slide slide--bgc-3">
+                <div class="slide__inner">
+                  <picture>
+                    <img class="slide__picture" src="images/hero-3.png" srcset="images/hero-3@2x.png" width="280"
+                      height="280" alt="Изображение стильной чёрной жестяной банки с напитком Тройной Эспрессо">
+                  </picture>
+                  <span class="badge">НОВИНКА!</span>
+                  <h2 class="slide__title title">Тройной Эспрессо</h2>
+                  <p class="slide__description text">Мощнее укола адреналина, чернее самой тёмной ночи, этот тройной
+                    эспрессо из Колумбии покажет вам, что такое настоящая бодрость</p>
+                  <div class="slide__order order">
+                    <div class="order__inner">
+                      <del class="order__old-price">395₽</del>
+                      <span class="order__price">375₽</span>
+                    </div>
+                    <a class="order__button button" href="#">Заказать</a>
+                  </div>
+                </div>
+              </article>
             </div>
+            <button class="hero__slider-prev-button" type="button" aria-label="Посмотреть предыдущий слайд">
+              <svg width="20" height="20">
+                <use href="images/icons/stack.svg#slider-prev"></use>
+              </svg>
+            </button>
+            <button class="hero__slider-next-button" type="button" aria-label="Посмотреть следующий слайд">
+              <svg width="20" height="20">
+                <use href="images/icons/stack.svg#slider-next"></use>
+              </svg>
+            </button>
           </div>
         </div>
       </section>
@@ -169,7 +222,8 @@
               <ul class="form__list">
                 <li class="form__item">
                   <label class="form__control">
-                    <input class="form__field visually-hidden" type="radio" id="no-matter" name="milk" value="no-matter" checked>
+                    <input class="form__field visually-hidden" type="radio" id="no-matter" name="milk" value="no-matter"
+                      checked>
                     <span class="form__control-mark"></span>
                     <span class="form__label">Неважно</span>
                   </label>
@@ -183,14 +237,16 @@
                 </li>
                 <li class="form__item">
                   <label class="form__control">
-                    <input class="form__field visually-hidden" type="radio" id="vegetable" name="milk" value="vegetable">
+                    <input class="form__field visually-hidden" type="radio" id="vegetable" name="milk"
+                      value="vegetable">
                     <span class="form__control-mark"></span>
                     <span class="form__label">Только растительное</span>
                   </label>
                 </li>
                 <li class="form__item">
                   <label class="form__control">
-                    <input class="form__field visually-hidden" type="radio" id="milk-free" name="milk" value="milk-free" disabled>
+                    <input class="form__field visually-hidden" type="radio" id="milk-free" name="milk" value="milk-free"
+                      disabled>
                     <span class="form__control-mark"></span>
                     <span class="form__label">Без молока</span>
                   </label>
@@ -266,7 +322,8 @@
               <div class="product">
                 <a class="product__link" href="#">
                   <picture>
-                    <img class="product__picture"  src="images/coffee-can-1.png" srcset="images/coffee-can-1@2x.png" width="130" height="188"
+                    <img class="product__picture" src="images/coffee-can-1.png" srcset="images/coffee-can-1@2x.png"
+                      width="130" height="188"
                       alt="Изображение стильной бежевой жестяной банки с напитком Декаф Флэт Уайт">
                   </picture>
                 </a>
@@ -283,7 +340,8 @@
               <div class="product">
                 <a class="product__link" href="#">
                   <picture>
-                    <img class="product__picture" src="images/coffee-can-2.png" srcset="images/coffee-can-2@2x.png" width="130" height="188"
+                    <img class="product__picture" src="images/coffee-can-2.png" srcset="images/coffee-can-2@2x.png"
+                      width="130" height="188"
                       alt="Изображение стильной бежевой жестяной банки с напитком Декаф Флэт Уайт">
                   </picture>
                 </a>
@@ -300,24 +358,8 @@
               <div class="product">
                 <a class="product__link" href="#">
                   <picture>
-                    <img class="product__picture" src="images/coffee-can-3.png" srcset="images/coffee-can-3@2x.png" width="130" height="188"
-                      alt="Изображение стильной бежевой жестяной банки с напитком Декаф Флэт Уайт">
-                  </picture>
-                </a>
-                <h3 class="product__title title title--secondary title--text-align">Декаф Флэт Уайт</h3>
-                <p class="product__text text text--text-align">Кофе без кофеина из Эфиопии<br>с натуральным фермерским
-                  молоком</p>
-                <div class="order order--just-content">
-                  <span class="order__price">225₽</span>
-                  <a class="order__button button button--secondary" href="#">В корзину</a>
-                </div>
-              </div>
-            </li>
-            <li class="catalog__item">
-              <div class="product">
-                <a  class="product__link" href="#">
-                  <picture>
-                    <img class="product__picture" src="images/coffee-can-4.png" srcset="images/coffee-can-4@2x.png" width="130" height="188"
+                    <img class="product__picture" src="images/coffee-can-3.png" srcset="images/coffee-can-3@2x.png"
+                      width="130" height="188"
                       alt="Изображение стильной бежевой жестяной банки с напитком Декаф Флэт Уайт">
                   </picture>
                 </a>
@@ -334,7 +376,8 @@
               <div class="product">
                 <a class="product__link" href="#">
                   <picture>
-                    <img class="product__picture" src="images/coffee-can-5.png" srcset="images/coffee-can-5@2x.png" width="130" height="188"
+                    <img class="product__picture" src="images/coffee-can-4.png" srcset="images/coffee-can-4@2x.png"
+                      width="130" height="188"
                       alt="Изображение стильной бежевой жестяной банки с напитком Декаф Флэт Уайт">
                   </picture>
                 </a>
@@ -351,7 +394,26 @@
               <div class="product">
                 <a class="product__link" href="#">
                   <picture>
-                    <img class="product__picture" src="images/coffee-can-5.png" srcset="images/coffee-can-6@2x.png" width="130" height="188"
+                    <img class="product__picture" src="images/coffee-can-5.png" srcset="images/coffee-can-5@2x.png"
+                      width="130" height="188"
+                      alt="Изображение стильной бежевой жестяной банки с напитком Декаф Флэт Уайт">
+                  </picture>
+                </a>
+                <h3 class="product__title title title--secondary title--text-align">Декаф Флэт Уайт</h3>
+                <p class="product__text text text--text-align">Кофе без кофеина из Эфиопии<br>с натуральным фермерским
+                  молоком</p>
+                <div class="order order--just-content">
+                  <span class="order__price">225₽</span>
+                  <a class="order__button button button--secondary" href="#">В корзину</a>
+                </div>
+              </div>
+            </li>
+            <li class="catalog__item">
+              <div class="product">
+                <a class="product__link" href="#">
+                  <picture>
+                    <img class="product__picture" src="images/coffee-can-5.png" srcset="images/coffee-can-6@2x.png"
+                      width="130" height="188"
                       alt="Изображение стильной бежевой жестяной банки с напитком Декаф Флэт Уайт">
                   </picture>
                 </a>
@@ -475,7 +537,8 @@
               <h2 class="footer-nav__title title title--tertiary title--text-align">Контакты</h2>
               <ul class="footer-nav__list">
                 <li>
-                  <span class="footer-nav__link footer-nav__link--primary footer-nav__link--add">Санкт-Петербург, набережная реки Карповки, дом 5</span>
+                  <span class="footer-nav__link footer-nav__link--primary footer-nav__link--add">Санкт-Петербург,
+                    набережная реки Карповки, дом 5</span>
                 </li>
                 <li>
                   <a class="footer-nav__link footer-nav__link--primary footer-nav__link--tel" href="tel:+79999999999">+7

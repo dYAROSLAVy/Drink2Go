@@ -1,0 +1,72 @@
+.slide {
+  width: 280px;
+  height: 587px;
+}
+
+.slide--bgc-1::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-color: $color-bridal-heath;
+}
+
+.slide--bgc-2::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-color: $color-lavender;
+}
+
+.slide--bgc-3::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-color: $color-solitude;
+}
+
+.slide__inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+  height: 100%;
+}
+
+.slide__title {
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: 0.72px;
+  text-align: center;
+}
+
+.slide__description {
+  padding: 5px 0;
+}
+
+.slide__picture {
+  width: 280px;
+  height: 280px;
+}
+
+.slide__picture-wrapper:not(:last-child) {
+  width: 280px;
+  height: 280px;
+  margin-bottom: 5px;
+}
+
+.slide__order {
+  padding: 10px;
+}

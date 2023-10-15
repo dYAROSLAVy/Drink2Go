@@ -1,14 +1,15 @@
 .container {
   width: 320px;
-  max-width: 1440px;
   margin: 0 auto;
   padding: 0 20px;
 
   @include vp-tab {
+    width: 768px;
     padding: 0 20px;
   }
 
   @include vp-desk {
+    width: 1440px;
     padding: 0 40px;
   }
 }
