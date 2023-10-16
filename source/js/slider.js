@@ -1,27 +1,56 @@
-const slider = document.querySelector('.hero__slider-wrapper');
-const prevButton = document.querySelector('.hero__slider-prev-button');
-const nextButton = document.querySelector('.hero__slider-next-button');
+const slider = document.querySelector('.slider');
+const prevButton = document.querySelector('.slider__prev-button');
+const nextButton = document.querySelector('.slider__next-button');
 const slides = Array.from(slider.querySelectorAll('.slide'));
-const slideCount = slides.length;
+const paginationWrapper = slider.querySelector('.slider__buttons-wrapper');
+const paginationButtons = Array.from(slider.querySelectorAll('.slider__button'));
+
 let slideIndex = 0;
 
-prevButton.addEventListener('click', showPreviousSlide);
-nextButton.addEventListener('click', showNextSlide);
+const checkSlides = () => {
+  if (slideIndex === 0) {
+    prevButton.disabled = true;
+  } else prevButton.disabled = false;
 
-// Функция для показа предыдущего слайда
-function showPreviousSlide() {
-  slideIndex = (slideIndex - 1 + slideCount) % slideCount;
+  if (slideIndex === slides.length - 1) {
+    nextButton.disabled = true;
+  } else nextButton.disabled = false;
+};
+
+function onPrevButtonClick() {
+  slideIndex -= 1;
   updateSlider();
 }
 
-// Функция для показа следующего слайда
-function showNextSlide() {
-  slideIndex = (slideIndex + 1) % slideCount;
+function onNextButtonClick() {
+  slideIndex += 1;
   updateSlider();
 }
 
-// Функция для обновления отображения слайдера
+function setActivePaginationItem(currentSlideIndex) {
+  document.querySelector('.slider__button--active').classList.remove('slider__button--active');
+
+  const activePaginationItem = paginationWrapper.children[currentSlideIndex];
+
+  if(activePaginationItem) {
+    activePaginationItem.classList.add('slider__button--active');
+  }
+}
+
+function initPagination() {
+  paginationButtons.forEach((button, index) => {
+    button.addEventListener('click', function () {
+      slideIndex = index
+      updateSlider()
+    })
+  })
+}
+
 function updateSlider() {
+  checkSlides();
+
+  setActivePaginationItem(slideIndex);
+
   slides.forEach((slide, index) => {
     if (index === slideIndex) {
       slide.style.display = 'block';
@@ -31,4 +60,13 @@ function updateSlider() {
   });
 }
 
-export { updateSlider };
+const initSlider = () => {
+  prevButton.addEventListener('click', onPrevButtonClick);
+  nextButton.addEventListener('click', onNextButtonClick);
+
+  initPagination()
+
+  updateSlider()
+}
+
+export { initSlider };

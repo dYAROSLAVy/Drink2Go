@@ -3,6 +3,10 @@
   min-height: 40px;
   flex-shrink: 0;
   padding: 10px 0;
+
+  @include vp-tab {
+    padding: 0;
+  }
 }
 
 .header .container {
@@ -11,15 +15,54 @@
   align-items: center;
   flex-wrap: wrap;
   padding: 0 10px 0 20px;
+
+  @include vp-tab {
+    padding: 0 20px;
+  }
+
+  @include vp-desk {
+    padding: 0 40px;
+  }
 }
 
 .header__logo {
-  align-self: start;
   width: 32px;
   height: 36px;
   margin-top: 2px;
+
+  @include vp-tab {
+    width: 82px;
+  }
+
+  @include vp-desk {
+    width: 316px;
+    display: grid;
+    grid-template-columns: 170px 126px;
+    gap: 20px;
+
+    &:not(:last-child) {
+      margin-right: 162px;
+    }
+  }
 }
 
 .header a {
   @include a-reset;
+}
+
+.header__logo-text {
+  display: none;
+
+  @include vp-desk {
+    display: inline;
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+
+.header__logo-img {
+  @include vp-desk {
+    width: 170px;
+    flex-shrink: 0;
+  }
 }

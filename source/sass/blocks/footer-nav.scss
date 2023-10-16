@@ -1,3 +1,17 @@
+.footer-nav {
+  @include vp-tab {
+    display: grid;
+    grid-template-columns: 222px 223px 222px;
+    align-items: start;
+    gap: 0 30px;
+  }
+
+  @include vp-desk {
+    grid-template-columns: 340px 340px 340px;
+    gap: 0 8px;
+  }
+}
+
 .footer-nav__title {
   letter-spacing: 0.28px;
 }
@@ -90,6 +104,16 @@
 
   &:active {
     color: $color-royal-purple;
+  }
+
+  @include vp-tab {
+    grid-column: 2 / 3;
+    padding: 10px 0;
+  }
+
+  @include vp-desk {
+    grid-column: 1 / 3;
+    margin-right: 23px;
   }
 }
 

@@ -5,11 +5,6 @@ const inputMax = document.querySelector('.price-range__value--max');
 const inputs = [inputMin, inputMax];
 
 const initRangeSlider = () => {
-
-  if (!effectLevelSlider || !inputMin || !inputMax) {
-    return;
-  }
-
   noUiSlider.create(effectLevelSlider, {
     start: [0, 900],
     connect: true,
@@ -32,7 +27,5 @@ const initRangeSlider = () => {
     effectLevelSlider.noUiSlider.set([null, this.value]);
   });
 }
-
-
 
 export { initRangeSlider };

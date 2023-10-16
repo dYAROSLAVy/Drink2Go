@@ -1,6 +1,14 @@
 .catalog {
   padding: 50px 0 44px;
   background-color: $color-white-smoke;
+
+  @include vp-tab {
+    padding: 80px 0 90px;
+  }
+
+  @include vp-desk {
+    padding: 100px 0 120px;
+  }
 }
 
 .catalog .container {
@@ -8,10 +16,48 @@
   flex-direction: column;
   align-items: center;
   gap: 4px 0;
+
+  @include vp-tab {
+    display: grid;
+  }
+
+  @include vp-desk {
+    grid-template-columns: 318px 1fr;
+    grid-template-areas:
+    "badge badge"
+    "title title"
+    "form select"
+    "form catalog"
+    ".   pagination";
+    gap: 4px 30px;
+  }
+}
+
+.catalog__badge {
+  @include vp-desk {
+    grid-area: badge;
+  }
+}
+
+.catalog__title {
+  @include vp-desk {
+    grid-area: title;
+  }
 }
 
 .catalog__title:not(:last-child) {
   margin-bottom: 16px;
+
+  @include vp-desk {
+    margin-bottom: 32px;
+  }
+}
+
+.catalog__form {
+  @include vp-desk {
+    grid-area: form;
+    align-self: start;
+  }
 }
 
 .catalog__form:not(:last-child) {
@@ -26,6 +72,15 @@
   gap: 8px;
   width: 280px;
   word-break: break-word;
+
+  @include vp-tab {
+    margin-left: auto;
+  }
+
+  @include vp-desk {
+    grid-area: select;
+    margin-right: 3px;
+  }
 }
 
 .catalog__select-label {
@@ -36,6 +91,10 @@
 
 .catalog__select-wrapper:not(:last-child) {
   margin-bottom: 12px;
+
+  @include vp-tab {
+    margin-bottom: 22px;
+  }
 }
 
 .catalog__list {
@@ -43,7 +102,37 @@
   display: grid;
   gap: 20px;
 
+  @include vp-tab {
+    grid-template-columns: 349px 349px;
+    gap: 30px;
+    justify-content: center;
+    align-self: center;
+  }
+
+  @include vp-desk {
+    grid-area: catalog;
+    grid-template-columns: repeat(3, 1fr)
+  }
+
   &:not(:last-child) {
     margin-bottom: 36px;
+
+    @include vp-tab {
+      margin-bottom: 66px;
+    }
+
+    @include vp-desk {
+      margin-bottom: 56px;
+    }
+  }
+}
+
+.catalog__pagination {
+  @include vp-tab {
+    justify-self: end;
+  }
+
+  @include vp-desk {
+    grid-area: pagination;
   }
 }

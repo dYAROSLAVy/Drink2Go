@@ -6,10 +6,26 @@
   display: flex;
   justify-content: center;
   height: 420px;
+
+  @include vp-tab {
+    height: 480px;
+  }
+
+  @include vp-desk {
+    height: 540px;
+  }
 }
 
 .map__img {
   width: 100vw;
   height: 420px;
   object-fit: cover;
+
+  @include vp-tab {
+    height: 480px;
+  }
+
+  @include vp-desk {
+    height: 540px;
+  }
 }

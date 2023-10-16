@@ -11,6 +11,13 @@
     width: 100%;
     background-color: $color-default-white;
   }
+
+  @include vp-tab {
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px 0;
+    max-width: 69%;
+  }
 }
 
 .site-list__item {
@@ -35,6 +42,11 @@
 
   position: relative;
   padding: 20px;
+
+  @include vp-tab {
+    display: inline-block;
+    height: 80px;
+  }
 
   &--current {
     @include vp-tab {
@@ -66,5 +78,9 @@
     &:active:not(.site-list__link--current) {
       background-color: $color-magnolia;
     }
+  }
+
+  @include vp-tab {
+    padding: 33px 21px;
   }
 }

@@ -3,10 +3,51 @@
   font-weight: 500;
   font-size: 12px;
   line-height: 16px;
+
+  @include vp-tab {
+    display: flex;
+    align-items: start;
+  }
+
+  @include vp-desk {
+    flex-grow: 1;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 882px;
+  }
 }
 
 .nav .user-list {
   max-width: 70%;
+
+  @include vp-tab {
+    max-width: 122px;
+  }
+
+  @include vp-desk {
+    gap: 10px 20px;
+    max-width: 270px;
+  }
+}
+
+.nav .site-list {
+  @include vp-tab {
+    max-width: 69%;
+  }
+
+  @include vp-desk {
+    gap: 10px 20px;
+  }
+}
+
+.nav .site-list:not(:last-child) {
+  @include vp-tab {
+    margin-right: 58px;
+  }
+
+  @include vp-desk {
+    margin: 0;
+  }
 }
 
 .nav__toggle {

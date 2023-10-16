@@ -1,5 +1,14 @@
 .price-range {
   padding-top: 10px;
+
+  @include vp-tab {
+    width: 222px;
+  }
+
+  @include vp-desk {
+    width: 318px;
+    padding-top: 9px;
+  }
 }
 
 .price-range__value {
@@ -14,6 +23,14 @@
   border: 2px solid $color-medium-purple;
   border-radius: 4px;
   appearance: textfield;
+
+  @include vp-tab {
+    width: 88px;
+  }
+
+  @include vp-desk {
+    width: 134px;
+  }
 
   &::-webkit-outer-spin-button,
   &::-webkit-inner-spin-button {
@@ -51,6 +68,14 @@
   justify-content: space-between;
   align-items: center;
   width: 280px;
+
+  @include vp-tab {
+    width: 223px;
+  }
+
+  @include vp-desk {
+    width: 318px;
+  }
 }
 
 .price-range__slider {
@@ -58,5 +83,13 @@
 
   &:not(:last-child) {
     margin-bottom: 34px;
+
+    @include vp-tab {
+      margin-bottom: 30px;
+    }
+
+    @include vp-desk {
+      margin-bottom: 32px;
+    }
   }
 }

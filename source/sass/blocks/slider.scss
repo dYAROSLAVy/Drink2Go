@@ -1,17 +1,4 @@
-.hero {
-  position: relative;
-  padding: 20px 0 49px 0;
-
-  @include vp-tab {
-    padding: 60px 0 0 0;
-  }
-
-  @include vp-desk {
-    padding: 0 0 60px;
-  }
-}
-
-.hero__slider-wrapper {
+.slider__inner {
   width: 280px;
   height: 587px;
   overflow: hidden;
@@ -25,11 +12,12 @@
   @include vp-desk {
     width: 1360px;
     height: 654px;
+    overflow: hidden;
   }
 }
 
-.hero__slider-prev-button,
-.hero__slider-next-button {
+.slider__prev-button,
+.slider__next-button {
   display: flex;
   align-items: center;
   position: absolute;
@@ -42,6 +30,7 @@
   border: none;
   background-color: transparent;
   color: $color-slate-blue;
+  cursor: pointer;
 
   @include vp-tab {
     justify-content: center;
@@ -59,7 +48,7 @@
   }
 }
 
-.hero__slider-prev-button {
+.slider__prev-button {
   left: 0;
 
   &:hover:not(:disabled) {
@@ -75,7 +64,7 @@
   }
 }
 
-.hero__slider-next-button {
+.slider__next-button {
   right: 0;
 
   &:hover:not(:disabled) {
@@ -91,7 +80,7 @@
   }
 }
 
-.hero__slider-buttons-wrapper {
+.slider__buttons-wrapper {
   display: none;
 
   @include vp-desk {
@@ -99,11 +88,12 @@
     gap: 8px;
     position: absolute;
     left: 50%;
+    bottom: 60px;
     transform: translateX(-50%);
   }
 }
 
-.hero__slider-button {
+.slider__button {
   @include vp-desk {
     display: flex;
     width: 62px;
@@ -115,22 +105,29 @@
   }
 }
 
-.hero__slider-button-decor {
+.slider__button-decor {
   display: flex;
   width: 62px;
   height: 4px;
   background-color: $color-default-white;
 }
 
-.hero__slider-button:hover .hero__slider-button-decor {
+.slider__button:hover .slider__button-decor {
   background-color: $color-slate-blue-op;
 }
 
-.hero__slider-button:focus .hero__slider-button-decor {
+.slider__button:focus .slider__button-decor {
   background-color: $color-slate-blue-op;
 }
 
-
-.hero__slider-button:active .hero__slider-button-decor {
+.slider__button:active .slider__button-decor {
   background-color: $color-slate-blue;
+}
+
+.slider__button--active .slider__button-decor {
+  background-color: $color-slate-blue;
+}
+
+.slider__button:disabled .slider__button-decor {
+  background-color: $color-silver;
 }

@@ -2,6 +2,29 @@
   display: flex;
   flex-direction: column;
   gap: 30px;
+
+  @include vp-tab {
+    gap: 40px;
+  }
+}
+
+.form__fildsets-wrapper {
+  display: grid;
+  gap: 30px;
+
+  @include vp-tab {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px 30px;
+  }
+
+  @include vp-desk {
+    grid-template-columns: 1fr;
+    gap: 30px 30px;
+
+    &:not(:last-child) {
+      margin-top: 5px;
+    }
+  }
 }
 
 .form__fieldset {
@@ -110,4 +133,15 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
+
+  @include vp-tab {
+    margin: 0 auto;
+    flex-direction: row;
+  }
+
+  @include vp-desk {
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }

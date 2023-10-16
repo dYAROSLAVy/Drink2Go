@@ -38,3 +38,23 @@
     background-color: $color-gainsboro;
   }
 }
+
+.pagination__link--padd {
+  @include vp-tab {
+    padding: 8px 20px;
+  }
+}
+
+.pagination__text {
+  display: none;
+
+  @include vp-tab {
+    display: inline;
+  }
+}
+
+.pagination__icon {
+  @include vp-tab {
+    display: none;
+  }
+}

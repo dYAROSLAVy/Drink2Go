@@ -3,6 +3,18 @@
   min-height: 40px;
   padding: 20px 0;
   overflow: hidden;
+
+  @include vp-tab {
+    padding: 40px 0 0;
+  }
+}
+
+.footer .container {
+  @include vp-desk {
+    display: grid;
+    grid-template-columns: 318px 1fr;
+    gap: 30px;
+  }
 }
 
 .footer__logo {
@@ -11,8 +23,28 @@
   flex-shrink: 0;
   width: 82px;
   height: 36px;
+
+  @include vp-tab {
+    width: 170px;
+  }
+
+  @include vp-desk {
+    width: 318px;
+    display: grid;
+    grid-template-rows: 36px 20px;
+    justify-content: start;
+    gap: 10px;
+  }
 }
 
 .footer__socials {
   max-width: 60%;
+}
+
+.footer__logo-text {
+  display: none;
+
+  @include vp-desk {
+    display: block;
+  }
 }
