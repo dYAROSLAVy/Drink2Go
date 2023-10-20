@@ -32,7 +32,7 @@ function setActivePaginationItem(currentSlideIndex) {
 
   const activePaginationItem = paginationWrapper.children[currentSlideIndex];
 
-  if(activePaginationItem) {
+  if (activePaginationItem) {
     activePaginationItem.classList.add('slider__button--active');
   }
 }

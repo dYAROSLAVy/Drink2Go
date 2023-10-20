@@ -24,11 +24,11 @@
   @include vp-desk {
     grid-template-columns: 318px 1fr;
     grid-template-areas:
-    "badge badge"
-    "title title"
-    "form select"
-    "form catalog"
-    ".   pagination";
+      "badge badge"
+      "title title"
+      "form select"
+      "form catalog"
+      ".   pagination";
     gap: 4px 30px;
   }
 }
@@ -111,7 +111,7 @@
 
   @include vp-desk {
     grid-area: catalog;
-    grid-template-columns: repeat(3, 1fr)
+    grid-template-columns: repeat(3, 1fr);
   }
 
   &:not(:last-child) {
